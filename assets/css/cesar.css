@@ -11512,6 +11512,8 @@ pre .code {
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  background-attachment: scroll !important;
+
 }
 
 .header .container {
