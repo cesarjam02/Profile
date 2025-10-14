@@ -30,6 +30,13 @@ $(document).ready(function(){
         } 
     });
 });
+// download CV
+function descargarCV() {
+    const enlace = document.createElement('a');
+    enlace.href = 'assets/files/CV-CESAR-AYALA.pdf';
+    enlace.download = 'CV-CESAR-AYALA.pdf';
+    enlace.click();
+  }
 
 // protfolio filters
 $(window).on("load", function() {

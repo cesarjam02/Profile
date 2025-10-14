@@ -11263,6 +11263,11 @@ p {
   color: #fff;
 }
 
+.subtitle {
+  text-align: justify;
+}
+
+
 .portfolio .portfolio-container .portfolio-item:hover .content-holder {
   opacity: 1;
   visibility: visible;
