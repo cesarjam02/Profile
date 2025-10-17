@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center pt-3">
-                <ul class="social-icons">
+                <ul class="social-icons header-social">
                     <li class="social-item"><a class="social-link text-light"
                             href="https://www.facebook.com/profile.php?id=61566414218632"><i class="ti-facebook"
                                 aria-hidden="true"></i></a></li>
@@ -75,10 +75,10 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link" data-translate="info">Información</a>
+                        <a href="#about" class="nav-link" data-translate="info">Información</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link" data-translate="services">Servicios</a>
+                        <a href="#service" class="nav-link" data-translate="services">Servicios</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link" data-translate="contact">Contacto</a>
@@ -92,7 +92,7 @@
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light" data-translate="about_me">Sobre mi</h3>
                 <span class="line mb-5"></span>
-                <p class="subtitle">
+                <p class="subtitle" data-translate="about_me_paragraph1">
                     Soy Ingeniero en Software graduado de la Escuela Superior Politécnica de Chimborazo, con experiencia
                     en el desarrollo de aplicaciones web, automatización de procesos y control de calidad. He
                     participado en diversos proyectos para instituciones educativas como la Universidad Nacional de
@@ -101,7 +101,7 @@
                     estuve a cargo del aseguramiento de calidad, donde desarrollé automatizaciones utilizando Cypress y
                     contribuí a la actualización de manuales y procedimientos.
                 </p>
-                <p class="subtitle">
+                <p class="subtitle" data-translate="about_me_paragraph2">
                     Actualmente curso una Maestría en Ciencia de Datos e Inteligencia de Negocios en la Universidad de
                     las Américas (UDLA), lo que me permite fortalecer mis competencias en el análisis avanzado de
                     información, la visualización de datos y la toma de decisiones estratégicas basadas en evidencia.
@@ -109,7 +109,7 @@
                     diseñar soluciones que integren desarrollo tecnológico con análisis inteligente de datos, generando
                     un mayor impacto en la optimización de procesos y la creación de valor para las organizaciones.
                 </p>
-                <p class="subtitle">
+                <p class="subtitle" data-translate="about_me_paragraph3">
                     Poseo dominio del inglés a nivel B2 y me he capacitado constantemente en tecnologías como HTML5,
                     CSS3, JavaScript, PHP, C# y Python, incluyendo certificaciones internacionales como el curso CS50 de
                     Harvard. Me apasiona construir soluciones que mejoren procesos y aporten valor real a las
@@ -231,8 +231,8 @@
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">2025 (Mayo – Actualidad)</h6>
-                            <p><strong>Ingeniero de Software</strong> – Fundación Hogar del Ecuador</p>
-                            <p class="subtitle">
+                            <p><strong data-translate="current_position">Ingeniero de Software</strong> – <span data-translate="current_company">Fundación Hogar del Ecuador</span></p>
+                            <p class="subtitle" data-translate="current_description">
                                 Me encuentro desarrollando dos aplicaciones estratégicas para la Fundación Hogar del
                                 Ecuador: una aplicación médica y una aplicación contable, orientadas a optimizar la
                                 gestión clínica y administrativa de la institución. Estos proyectos integran módulos
@@ -241,25 +241,25 @@
                                 trazabilidad de la información.
                             </p>
                             <ul>
-                                <li><strong>ISO 9001:</strong> Gestión de calidad en los procesos de desarrollo y
-                                    mantenimiento del software.</li>
-                                <li><strong>ISO/IEC 27001:</strong> Seguridad de la información para proteger datos
-                                    clínicos y financieros sensibles.</li>
-                                <li><strong>ISO/IEC 25010:</strong> Modelo de calidad de software, asegurando atributos
-                                    como usabilidad, confiabilidad y eficiencia.</li>
-                                <li><strong>ISO/IEC 12207:</strong> Procesos de ciclo de vida del software, desde la
-                                    concepción hasta el mantenimiento.</li>
+                                <li><strong>ISO 9001:</strong> <span data-translate="iso_9001">Gestión de calidad en los procesos de desarrollo y
+                                    mantenimiento del software.</span></li>
+                                <li><strong>ISO/IEC 27001:</strong> <span data-translate="iso_27001">Seguridad de la información para proteger datos
+                                    clínicos y financieros sensibles.</span></li>
+                                <li><strong>ISO/IEC 25010:</strong> <span data-translate="iso_25010">Modelo de calidad de software, asegurando atributos
+                                    como usabilidad, confiabilidad y eficiencia.</span></li>
+                                <li><strong>ISO/IEC 12207:</strong> <span data-translate="iso_12207">Procesos de ciclo de vida del software, desde la
+                                    concepción hasta el mantenimiento.</span></li>
                             </ul>
-                            <p>
+                            <p data-translate="current_additional">
                                 Además, se han considerado principios de arquitectura modular, escalabilidad y
                                 cumplimiento normativo, asegurando que las aplicaciones puedan evolucionar junto con las
                                 necesidades de la institución y cumplan con estándares internacionales.
                             </p>
                             <hr>
                             <h6 class="title text-danger">2024 (Abril – Agosto)</h6>
-                            <P><strong> Jefe de Control de Calidad </strong> – CITYTECH
+                            <P><strong data-translate="qa_position"> Jefe de Control de Calidad </strong> – <span data-translate="qa_company">CITYTECH</span>
                             </P>
-                            <P class="subtitle">En esta posición estuve a cargo de asegurar que todos los procesos
+                            <P class="subtitle" data-translate="qa_description">En esta posición estuve a cargo de asegurar que todos los procesos
                                 productivos cumplieran con los estándares de calidad establecidos por la empresa.
                                 Desarrollé e implementé automatizaciones con Cypress para pruebas funcionales, lo
                                 que permitió optimizar tiempos de revisión y minimizar errores manuales. Además,
@@ -269,8 +269,8 @@
                             <hr>
                             <h6 class="title text-danger">2024 (Febrero – Diciembre)
                             </h6>
-                            <P><strong>Desarrollador de Aplicación Web – </strong> Escuela de Lingüística Britania</P>
-                            <P class="subtitle">Me encargué del análisis y levantamiento de requerimientos para el
+                            <P><strong data-translate="web_dev_position">Desarrollador de Aplicación Web – </strong> <span data-translate="britania_company">Escuela de Lingüística Britania</span></P>
+                            <P class="subtitle" data-translate="britania_description">Me encargué del análisis y levantamiento de requerimientos para el
                                 desarrollo de una aplicación web personalizada para la gestión académica y el
                                 seguimiento del rendimiento de los estudiantes. Participé desde la fase de diseño hasta
                                 la implementación del sistema, integrando funciones que permiten a los docentes
@@ -279,10 +279,10 @@
                             <hr>
                             <h6 class="title text-danger">2023 (Julio – Octubre)
                             </h6>
-                            <P><strong> Desarrollador de Sistema de Seguimiento – </strong> Universidad Nacional de
-                                Chimborazo, Riobamba
+                            <P><strong data-translate="tracking_position"> Desarrollador de Sistema de Seguimiento – </strong> <span data-translate="unach_company">Universidad Nacional de
+                                Chimborazo, Riobamba</span>
                             </P>
-                            <P class="subtitle">Desarrollé e implementé un sistema de gestión del desempeño orientado a
+                            <P class="subtitle" data-translate="unach_description">Desarrollé e implementé un sistema de gestión del desempeño orientado a
                                 evaluar y recompensar a profesores y personal administrativo en función de sus logros y
                                 contribuciones institucionales. Este sistema permite establecer objetivos, registrar
                                 avances y generar reportes de cumplimiento, facilitando la toma de decisiones respecto a
@@ -291,9 +291,9 @@
 
                             <h6 class="title text-danger">2022 (Julio – Octubre)
                             </h6>
-                            <P> <strong>Desarrollador Web – </strong> Escuela de Oxford, Riobamba
+                            <P> <strong data-translate="oxford_position">Desarrollador Web – </strong> <span data-translate="oxford_company">Escuela de Oxford, Riobamba</span>
                             </P>
-                            <P class="subtitle">Lideré el desarrollo de una aplicación web orientada a estudiantes, que
+                            <P class="subtitle" data-translate="oxford_description">Lideré el desarrollo de una aplicación web orientada a estudiantes, que
                                 incluye funcionalidades como sistema de pagos en línea, seguimiento académico y acceso a
                                 recursos educativos. El proyecto incluyó diseño UI/UX adaptado a dispositivos móviles,
                                 implementación de bases de datos y pruebas funcionales. Este sistema ayudó a la
@@ -313,21 +313,21 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">Cuarto Nivel: </h6>
-                            <P>Maestria en Ciencias De datos</P>
-                            <P>Universidad de las Americas (cursando)</P>
+                            <h6 class="title text-danger" data-translate="fourth_level">Cuarto Nivel: </h6>
+                            <P data-translate="masters_degree">Maestria en Ciencias De datos</P>
+                            <P data-translate="udla_status">Universidad de las Americas (cursando)</P>
                             <hr>
-                            <h6 class="title text-danger">Tercer Nivel: </h6>
-                            <P>Ingeniero en Software</P>
-                            <P>Escuela Superior Politécnica de Chimborazo.</P>
+                            <h6 class="title text-danger" data-translate="third_level">Tercer Nivel: </h6>
+                            <P data-translate="software_engineer_degree">Ingeniero en Software</P>
+                            <P data-translate="espol">Escuela Superior Politécnica de Chimborazo.</P>
                             <hr>
-                            <h6 class="title text-danger">Colegio: </h6>
-                            <P>Bachiller</P>
-                            <P>Escuela Nuestra Señora de Fátima.</P>
+                            <h6 class="title text-danger" data-translate="high_school">Colegio: </h6>
+                            <P data-translate="bachelor">Bachiller</P>
+                            <P data-translate="fatima_school">Escuela Nuestra Señora de Fátima.</P>
                             <hr>
-                            <h6 class="title text-danger">Inglés: </h6>
-                            <P>B2</P>
-                            <P>Universidad San Francisco de Quito.</P>
+                            <h6 class="title text-danger" data-translate="english_level">Inglés: </h6>
+                            <P data-translate="b2_level">B2</P>
+                            <P data-translate="usfq">Universidad San Francisco de Quito.</P>
 
                         </div>
                     </div>
@@ -552,7 +552,7 @@
     </section>
 
 
-    <section class="section bg-dark py-5">
+    <section class="section bg-dark py-5" id="contact">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal" data-translate="looking_for_someone"> ¿Buscas a alguien que convierta ideas en soluciones reales?
             </h2>
