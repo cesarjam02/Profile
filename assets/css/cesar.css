@@ -11688,3 +11688,56 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+/* Translation button styles */
+.translate-btn {
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.translate-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.translate-btn:active {
+    transform: translateY(0);
+}
+
+.translate-btn i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments for translation button */
+@media (max-width: 768px) {
+    .translate-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .translate-btn i {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+}
+
+/* Animation for language switching */
+[data-translate] {
+    transition: all 0.3s ease;
+}
+
+/* Smooth transition for text changes */
+.translating {
+    opacity: 0.7;
+    transform: translateY(5px);
+}

@@ -17,27 +17,32 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <header class="header">
         <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light"
-                        href="https://www.facebook.com/profile.php?id=61566414218632"><i class="ti-facebook"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://x.com/JamCesar"><i
-                            class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/cesarjam02"> <i
-                            class="fab fa-github" aria-hidden="true"></i></a> </li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/cesar.jam/"><i
-                            class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light"
-                        href="https://www.linkedin.com/in/c%C3%A9sar-javier-ayala-mart%C3%ADnez-8002b4178/"><i
-                            class="ti-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <ul class="social-icons">
+                    <li class="social-item"><a class="social-link text-light"
+                            href="https://www.facebook.com/profile.php?id=61566414218632"><i class="ti-facebook"
+                                aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://x.com/JamCesar"><i
+                                class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="https://github.com/cesarjam02"> <i
+                                class="fab fa-github" aria-hidden="true"></i></a> </li>
+                    <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/cesar.jam/"><i
+                                class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light"
+                            href="https://www.linkedin.com/in/c%C3%A9sar-javier-ayala-mart%C3%ADnez-8002b4178/"><i
+                                class="ti-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+                <button id="translateBtn" class="btn btn-outline-light btn-sm translate-btn">
+                    <i class="fas fa-language"></i> <span data-translate="translate">Traducir</span>
+                </button>
+            </div>
             <div class="header-content">
-                <h4 class="header-subtitle">Hola, Mi nombre es</h4>
+                <h4 class="header-subtitle" data-translate="hello">Hola, Mi nombre es</h4>
                 <h1 class="header-title">César Ayala</h1>
-                <h6 class="header-mono">Ingeniero en Software</h6>
-                <h6 class="header-mono">Mastría en Ciencia de Datos e Inteligencia del Negocio</h6>
+                <h6 class="header-mono" data-translate="software_engineer">Ingeniero en Software</h6>
+                <h6 class="header-mono" data-translate="data_science">Mastría en Ciencia de Datos e Inteligencia del Negocio</h6>
                 <a href="assets/files/CV-CESAR-AYALA.pdf" download class="btn btn-primary btn-rounded">
-                    <i class="ti-printer pr-2"></i>Imprimir Hoja de Vida
+                    <i class="ti-printer pr-2"></i><span data-translate="print_cv">Imprimir Hoja de Vida</span>
                 </a>
             </div>
         </div>
@@ -52,31 +57,31 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Inicio</a>
+                        <a href="#home" class="nav-link" data-translate="home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Acerca de</a>
+                        <a href="#about" class="nav-link" data-translate="about">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Hoja de Vida</a>
+                        <a href="#resume" class="nav-link" data-translate="resume">Hoja de Vida</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="avatar" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">César Ayala</h5>
-                        <div class="brand-subtitle">Desarollador | Ingeniero en Software</div>
+                        <div class="brand-subtitle" data-translate="developer">Desarollador | Ingeniero en Software</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Información</a>
+                        <a href="#portfolio" class="nav-link" data-translate="info">Información</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Servicios</a>
+                        <a href="#blog" class="nav-link" data-translate="services">Servicios</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
+                        <a href="#contact" class="nav-link" data-translate="contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +90,7 @@
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Sobre mi</h3>
+                <h3 class="font-weight-light" data-translate="about_me">Sobre mi</h3>
                 <span class="line mb-5"></span>
                 <p class="subtitle">
                     Soy Ingeniero en Software graduado de la Escuela Superior Politécnica de Chimborazo, con experiencia
@@ -112,17 +117,17 @@
                 </p>
 
                 <button class="btn btn-primary btn-rounded" onclick="descargarCV()">
-                    <i class="ti-printer pr-2"></i>Imprimir Hoja de Vida
+                    <i class="ti-printer pr-2"></i><span data-translate="print_cv">Imprimir Hoja de Vida</span>
                 </button>
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Información Personal</h3>
+                <h3 class="font-weight-light" data-translate="personal_info">Información Personal</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Fecha de nacimiento</span> : 02/06/2000</li>
-                    <li><span>Email</span> : cesarjam02@gmail.com</li>
-                    <li><span>Celular</span> : ( + 593) 939359400 </li>
-                    <li><span>Dirección</span> : Riobamba - Ecuador.</li>
+                    <li><span data-translate="birth_date">Fecha de nacimiento</span> : 02/06/2000</li>
+                    <li><span data-translate="email">Email</span> : cesarjam02@gmail.com</li>
+                    <li><span data-translate="mobile">Celular</span> : ( + 593) 939359400 </li>
+                    <li><span data-translate="address">Dirección</span> : Riobamba - Ecuador.</li>
                 </ul>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link"
@@ -141,13 +146,13 @@
                 </ul>
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Mis Especialidades</h3>
+                <h3 class="font-weight-light" data-translate="my_specialties">Mis Especialidades</h3>
                 <span class="line mb-5"></span>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Desarrollo de Aplicaciones Web</h6>
-                        <p class="subtitle"> Experto en la creación de aplicaciones web dinámicas y responsivas
+                        <h6 data-translate="web_development">Desarrollo de Aplicaciones Web</h6>
+                        <p class="subtitle" data-translate="web_development_desc"> Experto en la creación de aplicaciones web dinámicas y responsivas
                             utilizando tecnologías modernas como HTML5, CSS3, JavaScript y PHP. Experiencia en la
                             integración de métodos de pago seguros y sistemas de seguimiento académico.</p>
                         <hr>
@@ -156,8 +161,8 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Aseguramiento de la Calidad del Software</h6>
-                        <p class="subtitle">Capacidad comprobada para garantizar la calidad del software mediante el
+                        <h6 data-translate="quality_assurance">Aseguramiento de la Calidad del Software</h6>
+                        <p class="subtitle" data-translate="quality_assurance_desc">Capacidad comprobada para garantizar la calidad del software mediante el
                             diseño y ejecución de estrategias de prueba. Experiencia en herramientas de automatización
                             como Cypress para optimizar los procesos de control de calidad.</p>
                         <hr>
@@ -166,8 +171,8 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Lenguajes de Programación y Desarrollo Backend</h6>
-                        <p class="subtitle">Dominio de lenguajes como C#, Python y PHP. Capacidad para desarrollar
+                        <h6 data-translate="programming_languages">Lenguajes de Programación y Desarrollo Backend</h6>
+                        <p class="subtitle" data-translate="programming_languages_desc">Dominio de lenguajes como C#, Python y PHP. Capacidad para desarrollar
                             sistemas backend escalables y scripts aplicables en contextos académicos y comerciales.</p>
                         <hr>
                     </div>
@@ -176,8 +181,8 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-bar-chart icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Análisis de Requisitos y Diseño de Sistemas</h6>
-                        <p class="subtitle">Sólida experiencia en la recopilación de requisitos, identificación de
+                        <h6 data-translate="system_design">Análisis de Requisitos y Diseño de Sistemas</h6>
+                        <p class="subtitle" data-translate="system_design_desc">Sólida experiencia en la recopilación de requisitos, identificación de
                             necesidades del cliente y traducción de estas en soluciones técnicas efectivas,
                             especialmente en el ámbito educativo.
                         </p>
@@ -189,8 +194,8 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-book icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Sistemas Académicos y Herramientas de Seguimiento Estudiantil</h6>
-                        <p class="subtitle"> Experiencia práctica en el diseño e implementación de plataformas para la
+                        <h6 data-translate="academic_systems">Sistemas Académicos y Herramientas de Seguimiento Estudiantil</h6>
+                        <p class="subtitle" data-translate="academic_systems_desc"> Experiencia práctica en el diseño e implementación de plataformas para la
                             evaluación del desempeño, monitoreo estudiantil y gestión académica.</p>
                         <hr>
                     </div>
@@ -199,8 +204,8 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-agenda icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Aprendizaje Continuo y Certificaciones </h6>
-                        <p class="subtitle"> Enfoque constante en la actualización profesional mediante cursos y
+                        <h6 data-translate="continuous_learning">Aprendizaje Continuo y Certificaciones </h6>
+                        <p class="subtitle" data-translate="continuous_learning_desc"> Enfoque constante en la actualización profesional mediante cursos y
                             certificaciones en plataformas como Udemy y Harvard (CS50). Comprometido con las mejores
                             prácticas y tendencias del desarrollo de software.</p>
                         <hr>
@@ -214,13 +219,13 @@
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Mi Hoja</span> de Vida</h2>
+            <h2 class="mb-5"><span class="text-danger" data-translate="my_resume">Mi Hoja</span> de Vida</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
                             <div class="mt-2">
-                                <h4>Experiencia Laboral</h4>
+                                <h4 data-translate="work_experience">Experiencia Laboral</h4>
                                 <span class="line"></span>
                             </div>
                         </div>
@@ -303,7 +308,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="mt-2">
-                                <h4>Educación</h4>
+                                <h4 data-translate="education">Educación</h4>
                                 <span class="line"></span>
                             </div>
                         </div>
@@ -331,7 +336,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Habilidades</h4>
+                                <h4 class="mt-2" data-translate="skills">Habilidades</h4>
                                 <span class="line"></span>
                             </div>
                         </div>
@@ -386,17 +391,17 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Idiomas</h4>
+                                <h4 class="mt-2" data-translate="languages">Idiomas</h4>
                                 <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>Inglés</h6>
+                            <h6 data-translate="english">Inglés</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Español</h6>
+                            <h6 data-translate="spanish">Español</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 1007%"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -418,7 +423,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h1 class="text-danger font-weight-bold font40">+500</h1>
-                            <p class="text-light mb-1">Horas Trabajadas</p>
+                            <p class="text-light mb-1" data-translate="hours_worked">Horas Trabajadas</p>
                         </div>
                     </div>
                 </div>
@@ -429,7 +434,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h1 class="text-danger font-weight-bold font40">7</h1>
-                            <p class="text-light mb-1">Proyectos Acabados</p>
+                            <p class="text-light mb-1" data-translate="finished_projects">Proyectos Acabados</p>
                         </div>
                     </div>
                 </div>
@@ -440,7 +445,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h1 class="text-danger font-weight-bold font40">+10</h1>
-                            <p class="text-light mb-1">Clientes Satisfechos</p>
+                            <p class="text-light mb-1" data-translate="satisfied_clients">Clientes Satisfechos</p>
                         </div>
                     </div>
                 </div>
@@ -451,7 +456,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h1 class="text-danger font-weight-bold font40">+3M</h1>
-                            <p class="text-light mb-1">Amor</p>
+                            <p class="text-light mb-1" data-translate="love">Amor</p>
                         </div>
                     </div>
                 </div>
@@ -461,7 +466,7 @@
 
     <section class="section" id="service">
         <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">Mis </span> Servicios</h2>
+            <h2 class="mb-5 pb-4"><span class="text-danger" data-translate="my_services">Mis </span> Servicios</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
@@ -469,8 +474,8 @@
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Desarrollo de Aplicaciones Web Personalizadas</h5>
-                            <P class="subtitle">Creación de plataformas a medida para empresas e instituciones,
+                            <h5 class="mb-3 card-title text-dark" data-translate="custom_web_development">Desarrollo de Aplicaciones Web Personalizadas</h5>
+                            <P class="subtitle" data-translate="custom_web_development_desc">Creación de plataformas a medida para empresas e instituciones,
                                 adaptadas a necesidades específicas como gestión académica, seguimiento de usuarios, o
                                 sistemas administrativos.</P>
                         </div>
@@ -482,9 +487,9 @@
                             <i class="ti-write text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Automatización de Pruebas y Control de Calidad (QA)
+                            <h5 class="mb-3 card-title text-dark" data-translate="automation_qa">Automatización de Pruebas y Control de Calidad (QA)
                             </h5>
-                            <P class="subtitle">Implementación de pruebas automatizadas con herramientas como Cypress
+                            <P class="subtitle" data-translate="automation_qa_desc">Implementación de pruebas automatizadas con herramientas como Cypress
                                 para asegurar que las aplicaciones funcionen correctamente antes de su despliegue.</P>
                         </div>
                     </div>
@@ -495,9 +500,9 @@
                             <i class="ti-package text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Mantenimiento y Optimización de Sistemas Existentes
+                            <h5 class="mb-3 card-title text-dark" data-translate="maintenance_optimization">Mantenimiento y Optimización de Sistemas Existentes
                             </h5>
-                            <P class="subtitle">Diagnóstico, mejora y actualización de aplicaciones web para aumentar su
+                            <P class="subtitle" data-translate="maintenance_optimization_desc">Diagnóstico, mejora y actualización de aplicaciones web para aumentar su
                                 rendimiento, seguridad y escalabilidad.</P>
                         </div>
                     </div>
@@ -508,9 +513,9 @@
                             <i class="ti-map-alt text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Análisis y Levantamiento de Requisitos de Software
+                            <h5 class="mb-3 card-title text-dark" data-translate="requirements_analysis">Análisis y Levantamiento de Requisitos de Software
                             </h5>
-                            <P class="subtitle">Identificación de necesidades del cliente y traducción en
+                            <P class="subtitle" data-translate="requirements_analysis_desc">Identificación de necesidades del cliente y traducción en
                                 especificaciones técnicas claras para el desarrollo de soluciones efectivas.</P>
                         </div>
                     </div>
@@ -521,9 +526,9 @@
                             <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Integración de Sistemas de Pago y Seguimiento
+                            <h5 class="mb-3 card-title text-dark" data-translate="payment_integration">Integración de Sistemas de Pago y Seguimiento
                                 Académico</h5>
-                            <P class="subtitle">Desarrollo de módulos para pagos en línea, control de asistencia,
+                            <P class="subtitle" data-translate="payment_integration_desc">Desarrollo de módulos para pagos en línea, control de asistencia,
                                 evaluación de desempeño y seguimiento de estudiantes en instituciones educativas.</P>
                         </div>
                     </div>
@@ -534,9 +539,9 @@
                             <i class="ti-support text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Capacitación en Herramientas y Lenguajes de
+                            <h5 class="mb-3 card-title text-dark" data-translate="training">Capacitación en Herramientas y Lenguajes de
                                 Programación</h5>
-                            <P class="subtitle">Talleres o asesorías personalizadas sobre tecnologías como HTML5, CSS3,
+                            <P class="subtitle" data-translate="training_desc">Talleres o asesorías personalizadas sobre tecnologías como HTML5, CSS3,
                                 JavaScript, Python, C#, y bases de datos, orientados a estudiantes o equipos técnicos.
                             </P>
                         </div>
@@ -549,10 +554,10 @@
 
     <section class="section bg-dark py-5">
         <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal"> ¿Buscas a alguien que convierta ideas en soluciones reales?
+            <h2 class="text-light mb-5 font-weight-normal" data-translate="looking_for_someone"> ¿Buscas a alguien que convierta ideas en soluciones reales?
             </h2>
             <a href="https://wa.me/593939359400" target="_blank">
-                <button class="btn bg-primary w-lg">Escríbeme y trabajemos juntos.</button>
+                <button class="btn bg-primary w-lg" data-translate="write_me">Escríbeme y trabajemos juntos.</button>
             </a>
         </div>
     </section>
