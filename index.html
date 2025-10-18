@@ -32,9 +32,14 @@
                             href="https://www.linkedin.com/in/c%C3%A9sar-javier-ayala-mart%C3%ADnez-8002b4178/"><i
                                 class="ti-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
-                <button id="translateBtn" class="btn btn-outline-light btn-sm translate-btn">
-                    <i class="fas fa-language"></i> <span data-translate="translate">Traducir</span>
-                </button>
+                <div class="d-flex gap-3">
+                    <button id="translateBtn" class="btn btn-outline-light btn-sm translate-btn">
+                        <i class="fas fa-language"></i> <span data-translate="translate">Traducir</span>
+                    </button>
+                    <button id="nightModeBtn" class="btn btn-outline-light btn-sm night-mode-btn">
+                        <i class="fas fa-moon" id="nightModeIcon"></i> <span id="nightModeText" data-translate="night_mode">Modo Nocturno</span>
+                    </button>
+                </div>
             </div>
             <div class="header-content">
                 <h4 class="header-subtitle" data-translate="hello">Hola, Mi nombre es</h4>
@@ -64,6 +69,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link" data-translate="resume">Hoja de Vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link" data-translate="projects">Proyectos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
@@ -413,6 +421,217 @@
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger" data-translate="my_projects">Mis </span> <span data-translate="projects">Proyectos</span></h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-layout-media-center-alt text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="hogar_ecuador_app">Aplicación Médica y Contable</h5>
+                                    <small class="text-muted" data-translate="fundacion_hogar">Fundación Hogar del Ecuador</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="hogar_ecuador_desc">
+                                Desarrollo de aplicaciones médicas y contables para optimizar la gestión clínica y administrativa. 
+                                Incluye módulos de atención de pacientes, control de inventarios, facturación y reportes gerenciales.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">Preact</span>
+                                <span class="badge badge-primary mr-1">Vite</span>
+                                <span class="badge badge-primary mr-1">PostgreSQL</span>
+                                <span class="badge badge-primary">ISO 9001</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-book text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="britania_system">Sistema Académico Britania</h5>
+                                    <small class="text-muted" data-translate="britania_school">Escuela de Lingüística Britania</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="britania_desc">
+                                Aplicación web personalizada para gestión académica y seguimiento del rendimiento estudiantil. 
+                                Permite monitoreo de progreso, registro de incidencias y generación de reportes automatizados.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">PHP</span>
+                                <span class="badge badge-primary mr-1">MySQL</span>
+                                <span class="badge badge-primary mr-1">HTML5</span>
+                                <span class="badge badge-primary">CSS3</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-stats-up text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="unach_system">Sistema de Gestión UNACH</h5>
+                                    <small class="text-muted" data-translate="unach_university">Universidad Nacional de Chimborazo</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="unach_desc">
+                                Sistema de gestión del desempeño para evaluar y recompensar a profesores y personal administrativo. 
+                                Incluye establecimiento de objetivos, registro de avances y reportes de cumplimiento.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">C#</span>
+                                <span class="badge badge-primary mr-1">SQL Server</span>
+                                <span class="badge badge-primary mr-1">ASP.NET</span>
+                                <span class="badge badge-primary">JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-layout-grid3 text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="oxford_app">Aplicación Oxford</h5>
+                                    <small class="text-muted" data-translate="oxford_school">Escuela de Oxford</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="oxford_desc">
+                                Aplicación web estudiantil con sistema de pagos en línea, seguimiento académico y acceso a recursos educativos. 
+                                Incluye diseño UI/UX responsivo y funcionalidades móviles.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">PHP</span>
+                                <span class="badge badge-primary mr-1">JavaScript</span>
+                                <span class="badge badge-primary mr-1">Bootstrap</span>
+                                <span class="badge badge-primary">MySQL</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-settings text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="cypress_automation">Automatización con Cypress</h5>
+                                    <small class="text-muted" data-translate="citytech">CITYTECH</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="cypress_desc">
+                                Implementación de pruebas automatizadas con Cypress para optimizar procesos de control de calidad. 
+                                Desarrollo de estrategias de prueba que redujeron tiempos de revisión y minimizaron errores manuales.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">Cypress</span>
+                                <span class="badge badge-primary mr-1">JavaScript</span>
+                                <span class="badge badge-primary mr-1">QA</span>
+                                <span class="badge badge-primary">Testing</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-bar-chart text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="data_analysis">Análisis de Datos</h5>
+                                    <small class="text-muted" data-translate="personal_project">Proyecto Personal</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="data_analysis_desc">
+                                Proyectos de análisis de datos e inteligencia de negocios utilizando Python y herramientas de visualización. 
+                                Implementación de modelos predictivos y dashboards interactivos para toma de decisiones.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">Python</span>
+                                <span class="badge badge-primary mr-1">Pandas</span>
+                                <span class="badge badge-primary mr-1">Matplotlib</span>
+                                <span class="badge badge-primary">Jupyter</span>
+                            </div>
+                            <a href="https://github.com/cesarjam02" target="_blank" class="btn btn-outline-danger btn-sm" data-translate="view_github">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="ti-ticket text-danger icon-lg"></i>
+                                </div>
+                                <div class="col-9">
+                                    <h5 class="card-title mb-1" data-translate="bus_tickets_system">Sistema de Ventas de Boletos de Buses</h5>
+                                    <small class="text-muted" data-translate="transportation_system">Sistema de Transporte</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text" data-translate="bus_tickets_desc">
+                                Sistema completo de venta de boletos para empresas de transporte público. Incluye gestión de rutas, 
+                                horarios, reservas, pagos en línea, control de asientos y reportes de ventas en tiempo real.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge badge-primary mr-1">Java</span>
+                                <span class="badge badge-primary mr-1">Spring Boot</span>
+                                <span class="badge badge-primary mr-1">Hibernate</span>
+                                <span class="badge badge-primary">MySQL</span>
+                            </div>
+                            <a href="https://github.com/bryanc2023/SistemaBoletosBus" target="_blank" class="btn btn-outline-danger btn-sm" data-translate="view_project">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section bg-dark text-center">
         <div class="container">
             <div class="row text-center">
@@ -575,6 +794,55 @@
 
     <!--  js -->
     <script src="assets/js/cesar.js"></script>
+    
+    <!-- Night Mode JavaScript -->
+    <script>
+        // Night Mode Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const nightModeBtn = document.getElementById('nightModeBtn');
+            const nightModeIcon = document.getElementById('nightModeIcon');
+            const nightModeText = document.getElementById('nightModeText');
+            
+            // Check if night mode is saved in localStorage
+            const isNightMode = localStorage.getItem('nightMode') === 'true';
+            
+            // Apply saved night mode state
+            if (isNightMode) {
+                document.body.classList.add('night-mode');
+                updateNightModeUI(true);
+            }
+            
+            // Night mode toggle event listener
+            nightModeBtn.addEventListener('click', function() {
+                const isCurrentlyNightMode = document.body.classList.contains('night-mode');
+                
+                if (isCurrentlyNightMode) {
+                    // Switch to light mode
+                    document.body.classList.remove('night-mode');
+                    localStorage.setItem('nightMode', 'false');
+                    updateNightModeUI(false);
+                } else {
+                    // Switch to night mode
+                    document.body.classList.add('night-mode');
+                    localStorage.setItem('nightMode', 'true');
+                    updateNightModeUI(true);
+                }
+            });
+            
+            // Update night mode button UI
+            function updateNightModeUI(isNightMode) {
+                if (isNightMode) {
+                    nightModeIcon.className = 'fas fa-sun';
+                    nightModeText.textContent = 'Modo Día';
+                    nightModeText.setAttribute('data-translate', 'day_mode');
+                } else {
+                    nightModeIcon.className = 'fas fa-moon';
+                    nightModeText.textContent = 'Modo Nocturno';
+                    nightModeText.setAttribute('data-translate', 'night_mode');
+                }
+            }
+        });
+    </script>
 
 </body>
 
